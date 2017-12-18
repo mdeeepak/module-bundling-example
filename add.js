@@ -1,5 +1,5 @@
-var add= function(a,b){
+define([], function(){
+    return function add(a,b){
     return a+b;
-}
-
-module.exports = add;
+    }
+});

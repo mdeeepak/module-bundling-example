@@ -1,9 +1,5 @@
-var reduce = require('./reduce');
-var add = require('./add');
-
-
-var sum = function (list){
-    return reduce(list,add,0);
-}
-
-module.exports = sum;
+define(["./reduce", "./add"],function (reduce, add){
+    return function sum(list) {
+        return reduce(list,add,0);
+    }
+});

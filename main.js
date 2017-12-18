@@ -1,5 +1,6 @@
-var sum = require('./sum');
+require(["./sum"],function(sum){
 var number = [1,2,3];
 var result = sum(number);
 var outputElement = document.getElementById("output");
-outputElement.innerHTML = result;
+outputElement.innerHTML = result
+});

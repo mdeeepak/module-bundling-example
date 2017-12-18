@@ -1,8 +1,8 @@
-var reduce = function(list, iteratee, memo){
+define([], function(){
+    return function reduce(list, a, memo){
     list.forEach(function(item) {
-        memo = iteratee(item, memo);
+        memo = a(item, memo);
     });
     return memo;
-}
-
-module.exports = reduce;
+};
+});
